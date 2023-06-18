@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Noto+Serif+JP:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/89e6398017.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="single.css">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="row v-center">
+                <div class="header-item item-left">
+                    <div class="logo">
+                        <a href="#">Saja <span>Luxury<span></a>
+                    </div>
+                </div>
+                <!-- menu start here -->
+                <div class="header-item item-center">
+                    <div class="menu-overlay">
+                    </div>
+                    <nav class="menu">
+                        <div class="mobile-menu-head">
+                            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="menu-main">
+                            <li>
+                                <a href="Home.php">Home</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Jewerly <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item text-center">
+                                        <a href="Necklaces.php">
+                                        
+                                        <h4 class="title">Necklaces</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="Bracelets.php">
+                                        
+                                        <h4 class="title">Bracelets</h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="Rings.php">
+                                        
+                                        <h4 class="title">Rings </h4>
+                                        </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="Engagement.php">
+                                        
+                                        <h4 class="title">Engagement</h4>
+                                       </a>
+                                    </div>
+   
+                                    <div class="list-item text-center">
+                                        <a href="Earings.php">
+                                        
+                                        <h4 class="title">Earings</h4>
+                                       </a>
+                                    </div>
+                                    <div class="list-item text-center">
+                                        <a href="#">
+                                        
+                                        <h4 class="title">Watches</h4>
+                                       </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="Gift.php">Gifts</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="ABout.php">ABout us </a>
+                                
+                            </li>
+                            <li>
+                                <a href="Contact.php">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu end here -->
+                <div class="header-item item-right">
+                    <a href="profile.php"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="Cart.php"><i class="fas fa-shopping-cart"></i></a>
+                    <!-- mobile menu trigger -->
+                    <div class="mobile-menu-trigger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <div class="hero">
+        <div class="row-item">
+            <div class="col-item">
+
+                <div class="slider-items">
+                    <div class="product-items">
+
+                        <img" id="image1"  alt="" onclick="clickme(this)">
+                        <img id="image2"  alt="" onclick="clickme(this)">
+                        <img id="image3"  alt="" onclick="clickme(this)">
+                        <img id="image4"  alt="" onclick="clickme(this)">
+
+                    </div>
+                    <div class="preview">
+                        <img id="image5" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-item">
+
+                <div class="content">
+                    <h3 id="name"></h3>
+                    <p id="price"></p>
+                    <hr style="color: #333;">
+                    
+                    <p id="description">
+                      </p>
+                   
+                
+                    <button type="button" class="button-item" id="shop" onclick="addToCart()"> <i class="fa fa-shopping-cart"></i>Add to cart</button>
+                    <div id="popup">
+                    <div id="popup-content">
+
+                    </div>
+                    </div>
+                        <div class="list-provide">
+        
+                          <p><i class="fa fa-truck" aria-hidden="true"></i>    Free shipping on order over $500</p>
+                        <p><i class="fa fa-retweet" aria-hidden="true"></i>   Free 30 Day return after shipping</p>
+                        <p><i class="fa fa-diamond" aria-hidden="true"></i>   Two years jewelery warranty</p>
+                       
+                      </div>
+                      
+                </div>
+
+            </div>
+        </div>
+        <!-- Add more HTML elements as needed for your product details -->
+
+
+        <br><br><br>
+
+<h2 class="you-may-also-like" >You May Also Like </h2>
+          
+
+        <div class="rings-shop shop">
+
+        
+          <div  class="product-details"  id="product-4">
+         <div class="change-img-hover">
+             <div class="img-normal">
+               <img id="image1" src="images/slid4.jpg" alt="vision">
+             </div>
+             <div class="img-hover" >
+               
+             </div>
+           </div>
+         <p class="p-name">Single Bold Chain Necklace</p>
+         <div class="desc-price">
+         <p class="p-description">14k Yellow Gold</p>
+         <p class="p-price">$500</p>
+         </div>
+       
+        </div>
+
+        <div  class="product-details"  id="product-3">
+         <div class="change-img-hover">
+             <div class="img-normal">
+               <img id="image1" src="images/slid16.jpg" alt="vision">
+             </div>
+             <div class="img-hover" >
+               
+             </div>
+           </div>
+         <p class="p-name">Snake gold Necklace</p>
+         <div class="desc-price">
+         <p class="p-description">14k Yellow Gold</p>
+         <p class="p-price">$350</p>
+         </div>
+      
+        </div>
+
+        <div  class="product-details"  id="product-12">
+            <div class="change-img-hover">
+              <div class="img-normal">
+                <img id="image1" src="images/slid13.jpg" alt="vision">
+              </div>
+              <div class="img-hover">
+                
+              </div>
+            </div>
+            <p class="p-name">Sun Chain Necklace</p>
+            <div class="desc-price">
+            <p class="p-description">14k Yellow Gold</p>
+            <p class="p-price">$350</p>
+            </div>
+           
+           </div>
+    </div>
+
+      
+     <footer class="footer-distributed">
+        <hr>
+          <div class="footer-left">
+            <h3>Saja<span>Luxury</span></h3>
+        
+            <p class="footer-links">
+              <a href="#">Home</a>
+              |
+              <a href="#">About</a>
+              |
+              <a href="#">Contact</a>
+            </p>
+        
+            <p class="footer-company-name">© 2019 Saja Luxury Pvt. Ltd.</p>
+          </div>
+        
+          <div class="footer-center">
+            <div>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p><span>309 - luxa Solitaire,
+                 Bldg. No. A - 3, Sector - 1</span>
+                badaro, Beirut-lebanon - 200820</p>
+            </div>
+        
+            <div>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+              <p>+961 01-654-981</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <p><a href="mailto:support@eduonix.com">support@sajaLuxury.com</a></p>
+            </div>
+          </div>
+        
+          <div class="footer-right">
+            <p class="footer-company-about">
+              <span>About Saja Luxury</span>
+              We sell high qualities of diamond, gold and silver that suits ever person own beauty.Be uique. Wear our's</p>
+            <div class="footer-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </footer>
+     
+
+        <script>
+            // Retrieve the product details from URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const description = urlParams.get('description');
+            const priceCart = urlParams.get('priceCart');
+            const productImageSrc1 = urlParams.get('productImageSrc1');
+            const productImageSrc2 = urlParams.get('productImageSrc2');
+            const productImageSrc3 = urlParams.get('productImageSrc3');
+            const productImageSrc4 = urlParams.get('productImageSrc4');
+
+            // Update the HTML elements with the product details
+            document.getElementById('name').textContent = name;
+            document.getElementById('image1').src = productImageSrc1;
+            document.getElementById('image2').src = productImageSrc2;
+            document.getElementById('image3').src = productImageSrc3;
+            document.getElementById('image4').src = productImageSrc4;
+            document.getElementById('image5').src = productImageSrc1;
+            document.getElementById('description').textContent = description;
+            document.getElementById('price').textContent = "$" + priceCart;
+
+        
+            
+function clickme(smallImg) {
+var fullImg = document.getElementById("image5");
+fullImg.src = smallImg.src;
+ }
+
+
+ 
+
+function addToCart() {
+
+  var productName= document.getElementById("name").textContent;
+  var productName =  document.querySelector('#image5').getAttribute('src');
+  var productPrice = document.getElementById("price").textContent;
+var cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+for (var i = 0; i < cartItems.length; i++) {
+  var item = cartItems[i];
+  var name = item.name;
+
+  const addToCartBtn = document.getElementById('shop');
+  const popup = document.getElementById('popup');
+const popupContent = document.getElementById('popup-content');
+
+if (name === productName) {
+  addToCartBtn.addEventListener('click', () => {
+    popupContent.innerHTML = "Item Already in Cart!"
+    popup.style.display = 'block';
+    popupContent.style.display = 'flex';
+
+    setTimeout(() => {
+      popup.style.display = 'none';
+      popupContent.style.display = 'none';
+    }, 3000);
+  });
+} else {
+  addToCartBtn.addEventListener('click', () => {
+    popupContent.innerHTML = "Item Added to Cart!"
+    popup.style.display = 'block';
+    popupContent.style.display = 'flex';
+
+    setTimeout(() => {
+      popup.style.display = 'none';
+      popupContent.style.display = 'none';
+    }, 3000);
+  });
+}
+
+
+}
+  var item = {
+    name: productName,
+    price: productPrice,
+    image: productImage,
+  };
+
+cartItems.push(item);
+localStorage.setItem("cart", JSON.stringify(cartItems));
+
+		
+		}
+
+</script>
+</div>
+
+
+
+</body>
+</html>
